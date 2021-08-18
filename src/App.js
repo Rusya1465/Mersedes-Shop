@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./components/NavbarComponents/Navbar";
+import "./App.css";
+import Home from "./components/NavbarComponents/pages/Home";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Services from "./components/NavbarComponents/pages/Services";
+import Products from "./components/NavbarComponents/pages/Products";
+import ContactUs from "./components/NavbarComponents/pages/ContactUs";
+import SignUp from "./components/NavbarComponents/pages/SignUp";
+import Marketing from "./components/NavbarComponents/pages/Marketing";
+import Consulting from "./components/NavbarComponents/pages/Consulting";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/services" component={Services} />
+        <Route path="/products" component={Products} />
+        <Route path="/contact-us" component={ContactUs} />
+        <Route path="/sign-up" component={SignUp} />
+        <Route path="/marketing" component={Marketing} />
+        <Route path="/consulting" component={Consulting} />
+      </Switch>
+    </Router>
   );
 }
 
