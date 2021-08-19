@@ -3,6 +3,8 @@ import { Button } from "./Button";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import Dropdown from "./Dropdown";
+import logo from "../../images/logo.svg";
+import logo2 from "../../images/brand-without-claim.svg";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -31,7 +33,8 @@ function Navbar() {
     <>
       <nav className="navbar">
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          EPIC
+          <img src={logo} />
+          <img src={logo2} />
           <i class="fab fa-firstdraft" />
         </Link>
         <div className="menu-icon" onClick={handleClick}>
