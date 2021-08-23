@@ -66,7 +66,7 @@ function Navbar() {
               className="nav-links"
               onClick={closeMobileMenu}
             >
-              Products
+              Автомобили
             </Link>
           </li>
           <li className="nav-item">

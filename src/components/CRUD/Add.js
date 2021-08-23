@@ -39,7 +39,7 @@ const Add = () => {
     class: "",
     category: "",
     image: "",
-    setting: "base",
+    configuration: "base",
   });
 
   function handleInput(e) {
