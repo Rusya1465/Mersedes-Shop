@@ -4,6 +4,16 @@
   padding: 0;
   font-family: "PT Sans", sans-serif;
 }
+a.text:active,
+a.text:hover,
+a.text {
+  text-decoration: none;
+  color: #666;
+}
+.dropdown_button > a {
+  text-decoration: none;
+  color: #fff !important;
+}
 
 .home,
 .services,
@@ -19,14 +29,13 @@
   font-size: 3rem;
 }
 
-/* .home {
-  background-image: url("./images/img-1.jpg");
+.home {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
-} */
+}
 
 .services {
   background-image: url("./images/img-2.jpg");

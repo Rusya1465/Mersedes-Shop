@@ -1,3 +1,83 @@
 {
-  "cars": []
+  "cars": [
+    {
+      "title": "Mercedes-AMG A 35 4 MATIC седан",
+      "description": "Седан с полным паспортным именем Mercedes-AMG A 35 4Matic оснащен абсолютно теми же агрегатами. Это форсированный двухлитровый турбомотор М 260 с отдачей 306 л.с. и 400 Нм, семиступенчатый «робот» AMG Speedshift DCT 7G с двумя сцеплениями и полный привод с электромеханической многодисковой муфтой подключения задних колес. Кузов усилен диагональными растяжками под капотом и алюминиевой панелью под двигателем.",
+      "price": "2 590 000",
+      "class": "A",
+      "category": "Седан",
+      "image": "https://assets.oneweb.mercedes-benz.com/iris/iris.jpg?COSY-EU-100-1713d0VXqNEFqtyO67PobzIr3eWsrrCsdRRzwQZxkIZbMw3SGtle9tsd2HVcUfpOyXGEundJ0l3OZOB2qBqbApRTyI5ux6ZQC30M1kzNBP6m7jAGohKV5YL%25vqCJjyLRgcDYaxPa9rH1endn8wYAxoiZr6YM4FAK2Tg95Yn6PDCIDSeWHmMtsd8Y%25cUfiMcXGE4TwJ0lgCZOB2fMqbAp7ToI5uKMTQmIJwF1iE6PDGmhSc63ZstXSRkGcUfaj6Phf7VSeTxdqtsLBJRcUXyJxXGJpl1J0OPqwOoHYUqDKCaZHoznIBbB2ZA0sQQziD45jA4FNgiaSa202hGnMms%25GI7Q4RA4&imgt=P27&bkgnd=9&pov=BE040&im=Crop,rect=(360,250,1280,580);Resize,width=250",
+      "cardTitle": "A-Класс седан",
+      "configuration": "base",
+      "titleCard": "A",
+      "id": 3
+    },
+    {
+      "title": "C 200 4MATIC Седан",
+      "description": "Новый C-Класс седан умело сочетает в себе кажущиеся противоположности, такие как спортивность и комфорт – с экономичностью, эмоциональностью и интеллектуальностью, определяя таким образом современную роскошь.",
+      "price": "3 660 000",
+      "class": "C",
+      "category": "Седан",
+      "image": "https://assets.oneweb.mercedes-benz.com/iris/iris.jpg?COSY-EU-100-1713d0VXqNWFqtyO67PobzIr3eWsrrCsdRRzwQZQ9vZbMw3SGtlajtsd2JQcUfpOyXGEundJ0l36xOB2NbFbApRn3I5ux5xQC31grkzNwtnm7jA2jhKViSF%25vq4tTyLRgLFYaxPrWrH1enun8wYzyoiZBkNM4FAm2Tg95Yn6PDakoSeWHw9tsd8otcUfiXkXGE4JSJ0lgOrOB2Pz%25bApe7pI5usKDQC3vT6khQOZ9w4lSeW0h%25tXSNFUcJtxmcXGEi9EJ0l8o1OB2G8nbAp0PyI5u9EaQC3zgOkzN7P9m7jKevhKVvst%25vqLBqyL0fsjko9wdYfHVyJ1qRcYxqN88Zlo21Ix2rbpldCdcqcgVGB4NPVHF82mx2&imgt=P27&bkgnd=9&pov=BE040&im=Crop,rect=(360,250,1280,580);Resize,width=250",
+      "cardTitle": "С-Класс седан",
+      "configuration": "base",
+      "id": 4
+    },
+    {
+      "title": "E 200 4MATIC Sport Седан",
+      "description": "Новый Мерседес Е-класс 2021 модельного года заявлен в пяти модификациях с разными вариантами силовых агрегатов и технического оборудования. Цена базовой версии начинается от 3,3 миллиона рублей, стоимость самой продвинутой топовой модификации сформируется на уровне 4,5 миллиона.",
+      "price": "4 780 000",
+      "class": "E",
+      "category": "Седан",
+      "image": "https://assets.oneweb.mercedes-benz.com/iris/iris.jpg?COSY-EU-100-1713d0VXqNWFqtyO67PobzIr3eWsrrCsdRRzwQZQ9vZbMw3SGtle9tsd2HdcUfp8qXGEubYJ0l36xOB2NbFbApRnoI5uxoNQC31SrkzNBzkm7j86ZhKViKh%25vq4vZyLRgO6Yax%255hrH1ymdn8w0AxoiZB%25YM4FAyPTg9LQn6PDaPpSeWHw9tsd8otcUfiAkXGE59XJ0lCrnOIJtR1qaWoiZeIQM6o2xgTSMjbO6PDLcbSeWvyVtsdPv%25cUfe8kXGEsbYJ0lwUnOB2ArnbAp5AoI5uC4zQC3zgTkze94pOy1qFm9KIFSW9NTmj32vvRWydVXjdhcfWF0FT3THuPsa28uKxvdbjd&imgt=P27&bkgnd=9&pov=BE040&im=Crop,rect=(360,250,1280,580);Resize,width=300",
+      "cardTitle": "E-Класс седан",
+      "configuration": "base",
+      "id": 6
+    },
+    {
+      "title": "Mercedes-AMG A 45 S 4MATIC+",
+      "description": "Модель Edition 1 Mercedes-AMG A 45 S 4MATIC+ выведет Вас на лидерские позиции как в техническом, так и в эстетическом плане. Оба преимущества объединяет в себе аэродинамический пакет AMG с задним антикрылом AMG. Пакет сидений AMG Performance повышает спортивность и комфорт. Контраст к солнечно-желтому цвету автомобиля создают черные легкосплавные колесные диски и пленка цвета «Серые горы magno».",
+      "price": "2 700 000",
+      "class": "A",
+      "category": "Хэтчбек",
+      "image": "https://assets.oneweb.mercedes-benz.com/iris/iris.jpg?COSY-EU-100-1713d0VXqNEFqtyO67PobzIr3eWsrrCsdRRzwQZxkIZbMw3SGtle9tsd2HVcUfprWXGEuJwJ0lV0VOB2qM%25bApRTwI5uG4MQC30srkzNB%25Km7j871hKVi%25F%25vqmUjyLRhnmYaxU5drH1Gm%25n8w0XnoiZKbYM4FvmQTg9LYT6PDZ%25pSeW0yhtsdB%25ycJtTjqNKFYax4JOroYfV8nMruXxoiZClYaOZ02rHAgMpn8obMuoiMDF3M4TL2NTmCI82R0s5jCmUkWg6g9jP4HttU7RKeEPKVfv75Y5949JikhXHOiSGtKpPK&imgt=P27&bkgnd=9&pov=BE040&im=Crop,rect=(360,250,1280,580);Resize,width=400",
+      "configuration": "base",
+      "brand": "A",
+      "cardTitle": "А-Класс хэтчбек",
+      "id": 2
+    },
+    {
+      "title": "S 450 4MATIC PREMIUM",
+      "description": "Mercedes-Benz S-класс (ориг. S-Klasse, от нем. Sonderklasse — «особый класс»[1][2]) — флагманская серия представительских автомобилей немецкой компании Mercedes-Benz, дочернего подразделения концерна Daimler AG. Представляет собой наиболее значимую линейку моделей в иерархии классов торговой марки. Первые представительские седаны появились ещё в начале 1950-х годов, но официально S-класс появился лишь в 1972 году[1]. В настоящее время серия состоит из 7 поколений: W116, представленного в 1972 году и выпускавшегося до 1980 года; W126, дебютировавшего в 1979 году; W140, выпускавшегося с 1991 до 1999 года; W220, поступившего в продажу в 1998 году и завершивший производство в 2005; W221, представленного в 2005 году и собиравшегося до 2013 года включительно; W222, дебютировавшего в 2013 году и выпускавшегося до 2020; W223, премьера которого состоялась в 2020 году.",
+      "price": "11 350 000",
+      "class": "S",
+      "category": "Седан",
+      "image": "https://assets.oneweb.mercedes-benz.com/iris/iris.jpg?COSY-EU-100-1713d0VXqbWFqtyO67PobzIr3eWsrrCsdRRzwQZQ9vZbMw3SGtle2tsd2vtcUfp8cXGEubYJ0l36xOB2NS5bApjIXI5uVKDQC31MOkzNwzum7jZeIhKVFXM%25vqCtTyLRzcmYax7X8rH1KHrn8wvzyoiZL7IM4FaSMTg9Ht36PD8cqSeWiyItsd4YTcUfgrcXGEzymJ0l7IVOB2KQObApvdyI5uLfJQC3akOkzNHmdm7jQ6rhKVkKw%25vqeUayLRsGWYaxU5ErH1zJ%25n8w78foiZKkZM4FvRwTg9LY96PDarFSeWHtItsd8cTcUfiXyXGE45mJ0lgCrOB2fr5bApEn9I5ulmJQC3vMFkzNL6Sm%25kbFDZg2tsdB%25ycJtj9GXOc1hSJ0l44ZOB2i8RbAp0iyI5uCouQC3zCTkzN7P9m7jKGDhKUWP3IrZxD%25WL6DL2tVS%25qjuaa1frEROqEyJlfDADSjSiNsG8u4NLwaEQqE&imgt=P27&bkgnd=9&pov=BE040&im=Crop,rect=(360,250,1280,580);Resize,width=300",
+      "cardTitle": "S-Класс седан",
+      "configuration": "base",
+      "id": 7
+    },
+    {
+      "title": "Mercedes-Maybach S 580 4MATIC",
+      "description": "Подразделение немецкого концерна Daimler AG, пришедшее на смену закрытому в 2012 году убыточному предприятию Maybach. Основано в 2015 году в качестве суббренда Mercedes-Benz. Первым автомобилем, выпущенным предприятием, стал люксовый Mercedes-Maybach S500 на платформе 222 серии S-класса.",
+      "price": "20 400 000",
+      "class": "S",
+      "category": "Седан",
+      "image": "https://assets.oneweb.mercedes-benz.com/iris/iris.jpg?COSY-EU-100-1713d0VXqbSFqtyO67PobzIr3eWsrrCsdRRzwQZgk4ZbMw3SGtle2tsd2vtcUfpLfXGEuimJ0l34JOB2Ng5bApjkoI5uVcZQC3qX7kzNRmbm7jxamhKV1HE%25vq9tkyLRDcHYaxWXqrH1dHRn8wfAcoiZE5YM4FlmJTg9HQO6PD8koSeWimUtsd4stcUfg86XGEPiYJ0leIJOB2sQ1bApUk9I5uGmMQC30SrkzNBtbm7jAcmhKViSM%25vq4r9yLRgnyYaxPNSrH1ej%25n8wsoyoiZUMNM4FnT2Tg95gE6PDC7sSeWzKRtsd7vNcUfK8qXGE4ySJ0lg0hOB2PQqbApeTpI5usf2QC3UX3kzNGJum7j0hohKVB%25Q%25vqAycyLR5i6YaxC4qrH1zgOn8wRO4oiZxbNM4F1SrTg9UQ36PDGmhSc6o3juzw%25vq8cXyr%25WNaYny2tSrH1CBOn8w5AIoiZH5XM4F8mMTg9jxO6PDekqSeWseWtsdUs%25cUfGLqXGE0iRJ0lBDhOBi1aftkV3xb15YxKD12rbpldCCNZkFu6pFIT9ZxexrlrKE847dvE5jCFcpF&imgt=P27&bkgnd=9&pov=BE040&im=Crop,rect=(360,250,1280,580);Resize,width=300",
+      "cardTitle": "Mersedes-Maybach S-Класс",
+      "configuration": "base",
+      "id": 8
+    },
+    {
+      "title": "CLA 200 Sport",
+      "description": "Mercedes-Benz CLA-класс (ориг. нем. CLA-Klasse) — серия компактных престижных легковых автомобилей[1] немецкой торговой марки Mercedes-Benz, созданная на платформе компактных моделей A- и B-классов. Премьера состоялась в январе 2013 года на Североамериканском международном автосалоне в Детройте.",
+      "price": "3 210 000",
+      "class": "CLA",
+      "category": "Купе",
+      "image": "https://assets.oneweb.mercedes-benz.com/iris/iris.jpg?COSY-EU-100-1713d0VXqNEFqtyO67PobzIr3eWsrrCsdRRzwQZxkIZbMw3SGtle9tsd2HVcUfpOyXGEundJ0l3OZOB2qM%25bApRTwI5uGoxQC30g7kzNBUnm7jAyvhKV5XN%25vq4t9yLRgLFYaxPrWrH1yBRn8wYTyoiZB7lM4FAyrTg95bT6PDakoSeWHyhtsd8otcUfiM1XGE45wJ0ldoVOB2zMnbAp7oMIkbX1Zx8fTg9Ukm6tTuweSc6qQMtsdLYqcUfeOyXGE1uAJ0lBHAOB2AMnbAp5dXI5gZ8lXhRjwQZgOGUuauoQ3pE77V9hDNt3DkSW9wUwopoL24PvEa2zq7DJ3D&imgt=P27&bkgnd=9&pov=BE040&im=Crop,rect=(360,250,1280,580);Resize,width=300",
+      "cardTitle": "CLA купе",
+      "configuration": "base",
+      "id": 9
+    }
+  ]
 }
