@@ -1,14 +1,18 @@
-import React, { useState } from "react";
-import { Button } from "./Button";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import Dropdown from "./Dropdown";
+import { Card, Button, Alert } from "react-bootstrap";
+import { useHistory } from "react-router-dom";
 import logo from "../../images/logo.svg";
 import logo2 from "../../images/brand-without-claim.svg";
+import ModalAdd from "../CRUD/ModalAdd";
+import { useAuth } from "../contexts/AuthContext";
+import { Nav, NavDropdown } from "react-bootstrap";
 
 function Navbar() {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
+  const { currentUser, logout } = useAuth();
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -29,13 +33,35 @@ function Navbar() {
     }
   };
 
+  const [checkAdmin, setCheckAdmin] = useState(false);
+  useEffect(() => {
+    currentUser && currentUser.email === "rustam@gmail.com"
+      ? setCheckAdmin(true)
+      : setCheckAdmin(false);
+  }, []);
+
+  const [error, setError] = useState("");
+  const history = useHistory();
+  async function handleLogout() {
+    setError("");
+
+    try {
+      await logout();
+      history.push("/");
+    } catch {
+      setError("Ошибка при попытке выхода");
+    }
+  }
+
   return (
     <>
       <nav className="navbar">
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          <img src={logo} />
-          <img src={logo2} />
-          <i class="fab fa-firstdraft" />
+          <div className="logo-block">
+            {" "}
+            <img src={logo} />
+            <img src={logo2} />
+          </div>
         </Link>
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -43,7 +69,7 @@ function Navbar() {
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
             <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-              Home
+              Главная
             </Link>
           </li>
           <li
@@ -51,14 +77,18 @@ function Navbar() {
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
-            <Link
-              to="/services"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
-              Services <i className="fas fa-caret-down" />
-            </Link>
-            {dropdown && <Dropdown />}
+            <Nav>
+              <NavDropdown className="dropdown_button" title="Меню">
+                <NavDropdown.Item href="#action/3.1">
+                  <Link to="/favourite">Избранные товары</Link>
+                </NavDropdown.Item>
+
+                <NavDropdown.Divider />
+                <NavDropdown.Item>
+                  {checkAdmin ? <ModalAdd className="modalAdd" /> : null}
+                </NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
           </li>
           <li className="nav-item">
             <Link
@@ -69,26 +99,39 @@ function Navbar() {
               Автомобили
             </Link>
           </li>
+
           <li className="nav-item">
-            <Link
-              to="/contact-us"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
-              Contact Us
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/sign-up"
-              className="nav-links-mobile"
-              onClick={closeMobileMenu}
-            >
-              Sign Up
-            </Link>
+            <Nav>
+              <NavDropdown className="dropdown_button" title="Аккаунт">
+                {currentUser ? (
+                  <>
+                    <Card>
+                      <Card.Body>
+                        <h2 className="text-center mb-4">Profile</h2>
+                        {error && <Alert variant="danger">{error}</Alert>}
+                        <strong>Email:{currentUser.email}</strong>
+                      </Card.Body>
+                    </Card>
+                    <div className="w-100 text-center mt-2">
+                      <Button variant="link" onClick={handleLogout}>
+                        Log Out
+                      </Button>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div>
+                      <Link to="/sign-up">Sign up</Link>
+                    </div>
+                    <div>
+                      <Link to="/login">Login</Link>
+                    </div>
+                  </>
+                )}
+              </NavDropdown>
+            </Nav>
           </li>
         </ul>
-        <Button />
       </nav>
     </>
   );

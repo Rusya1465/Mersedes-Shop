@@ -5,13 +5,9 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
-import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import { IconButton } from "@material-ui/core";
 import { clientContext } from "../contexts/ClientContext";
-import { ShoppingCart } from "@material-ui/icons";
-import { useAuth } from "../contexts/AuthContext";
-import { adminContext } from "../contexts/AdminContext";
+import RemoveFavorite from "../Favorite/RemoveFavorite";
 
 const useStyles = makeStyles({
   root: {
@@ -23,11 +19,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function ImgMediaCard({
-  product,
-  FavoriteComponent,
-  handleFavoritesClick,
-}) {
+export default function ImgMediaCard({ car, handleFavoritesClick }) {
   const classes = useStyles();
   const { getProductDetail } = useContext(clientContext);
 
@@ -37,25 +29,25 @@ export default function ImgMediaCard({
         <CardActionArea>
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
-              {product.cardTitle}
+              {car.cardTitle}
             </Typography>
             <Typography size="small" color="textSecondary">
-              от {product.price} Сом
+              от {car.price} Сом
             </Typography>
           </CardContent>
           <CardMedia
             className={classes.cartImage}
             component="img"
             alt="Contemplative Reptile"
-            image={product.image}
+            image={car.image}
             title="Contemplative Reptile"
           />
         </CardActionArea>
         <CardActions
           className="shoping_box"
-          onClick={() => handleFavoritesClick(product)}
+          onClick={() => handleFavoritesClick(car)}
         >
-          <FavoriteComponent />
+          <RemoveFavorite />
         </CardActions>
       </Card>
     </>

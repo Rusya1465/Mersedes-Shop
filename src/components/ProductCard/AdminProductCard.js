@@ -12,6 +12,7 @@ import { clientContext } from "../contexts/ClientContext";
 import { ShoppingCart } from "@material-ui/icons";
 import { useAuth } from "../contexts/AuthContext";
 import { adminContext } from "../contexts/AdminContext";
+import ModalEdit from "../CRUD/ModalEdit";
 
 const useStyles = makeStyles({
   root: {
@@ -23,13 +24,16 @@ const useStyles = makeStyles({
   },
 });
 
-export default function ImgMediaCard({
-  product,
-  FavoriteComponent,
-  handleFavoritesClick,
-}) {
+export default function ImgMediaCard({ product }) {
+  const { deleteProduct, getProductToEdit, productToEdit } =
+    useContext(adminContext);
   const classes = useStyles();
   const { getProductDetail } = useContext(clientContext);
+  const [changeId, setChangeId] = useState(null);
+  const handleEditChange = (id) => {
+    getProductToEdit(id);
+    setChangeId(id);
+  };
 
   return (
     <>
@@ -51,11 +55,12 @@ export default function ImgMediaCard({
             title="Contemplative Reptile"
           />
         </CardActionArea>
-        <CardActions
-          className="shoping_box"
-          onClick={() => handleFavoritesClick(product)}
-        >
-          <FavoriteComponent />
+        <CardActions className="shoping_box">
+          {changeId === product.id ? (
+            <ModalEdit setChangeId={setChangeId} />
+          ) : null}
+          <button onClick={() => handleEditChange(product.id)}>Изменить</button>
+          <button onClick={() => deleteProduct(product.id)}>Удалить</button>
         </CardActions>
       </Card>
     </>

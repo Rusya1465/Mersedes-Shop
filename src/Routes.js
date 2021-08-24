@@ -3,10 +3,8 @@ import Navbar from "./components/NavbarComponents/Navbar";
 import "./App.css";
 import Home from "./components/NavbarComponents/pages/Home";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Services from "./components/NavbarComponents/pages/Services";
 import Products from "./components/NavbarComponents/pages/Products";
 import ContactUs from "./components/NavbarComponents/pages/ContactUs";
-// import SignUp from "./components/NavbarComponents/pages/SignUp";
 import Marketing from "./components/NavbarComponents/pages/Marketing";
 import Consulting from "./components/NavbarComponents/pages/Consulting";
 import AdminContextProvider from "./components/contexts/AdminContext";
@@ -18,6 +16,7 @@ import Dashboard from "./components/NavbarComponents/pages/Dashboard";
 import PrivateRoute from "./components/NavbarComponents/pages/PrivateRoute";
 import ForgotPassword from "./components/NavbarComponents/pages/ForgotPassword";
 import ClientContextProvider from "./components/contexts/ClientContext";
+import Favourite from "./components/NavbarComponents/pages/Favourite";
 
 const Routes = () => {
   return (
@@ -28,7 +27,7 @@ const Routes = () => {
             <Navbar />
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route exact path="/services" component={Services} />
+              <Route exact path="/favourite" component={Favourite} />
               <Route exact path="/products" component={Products} />
               <Route exact path="/contact-us" component={ContactUs} />
               <Route exact path="/sign-up" component={AppSingUp} />

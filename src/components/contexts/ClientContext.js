@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useReducer } from "react";
+import React, { useEffect, useReducer, useState } from "react";
 import { JSON_API_CARS } from "../../helpers/constans";
 
 export const clientContext = React.createContext();
@@ -29,7 +29,7 @@ const ClientContextProvider = ({ children }) => {
 
   const getProducts = async (history) => {
     const search = new URLSearchParams(window.location.search);
-    search.set("_limit", 6);
+    search.set("_limit", 3);
     history
       ? history.push(`${history.location.pathname}?${search.toString()}`)
       : console.log(null);
@@ -40,99 +40,28 @@ const ClientContextProvider = ({ children }) => {
     });
   };
 
-  // function addAndDeleteProductInCart(product) {
-  //   let cart = JSON.parse(localStorage.getItem("cart"));
-  //   if (!cart) {
-  //     cart = {
-  //       products: [],
-  //       totalPrice: 0,
-  //     };
-  //   }
-  //   let newProduct = {
-  //     product: product,
-  //     count: 1,
-  //     subPrice: 0,
-  //   };
-
-  //   newProduct.subPrice = calcSubPrice(newProduct);
-  //   let newCart = cart.products.filter(
-  //     (item) => item.product.id === product.id
-  //   );
-  //   if (newCart.length > 0) {
-  //     cart.products = cart.products.filter(
-  //       (item) => item.product.id !== product.id
-  //     );
-  //   } else {
-  //     cart.products.push(newProduct);
-  //   }
-  //   cart.totalPrice = calcTotalPrice(cart.products);
-  //   localStorage.setItem("cart", JSON.stringify(cart));
-
-  //   dispatch({
-  //     type: "ADD_AND_DELETE_PRODUCT_IN_CART",
-  //     payload: cart.products.length,
-  //   });
-  // }
-
-  // function checkProductInCart(id) {
-  //   let cart = JSON.parse(localStorage.getItem("cart"));
-  //   if (!cart) {
-  //     cart = {
-  //       products: [],
-  //       totalPrice: 0,
-  //     };
-  //   }
-
-  //   let newCart = cart.products.filter((item) => item.product.id === id);
-  //   return newCart.length > 0 ? true : false;
-  // }
-
-  // function getCart() {
-  //   let cart = JSON.parse(localStorage.getItem("cart"));
-  //   if (!cart) {
-  //     cart = [];
-  //   }
-  //   dispatch({
-  //     type: "GET_CART",
-  //     payload: cart.products,
-  //   });
-  // }
-
-  // function changeCountProduct(count, id) {
-  //   let cart = JSON.parse(localStorage.getItem("cart"));
-  //   cart.products = cart.products.map((item) => {
-  //     if (item.product.id === id) {
-  //       item.count = count;
-  //       item.subPrice = calcSubPrice(item);
-  //     }
-  //     return item;
-  //   });
-  //   cart.totalPrice = calcTotalPrice(cart.products);
-  //   localStorage.setItem("cart", JSON.stringify(cart));
-  //   getCart();
-  // }
-
-  // function makeOrder() {
-  //   localStorage.setItem("cart", null);
-  //   dispatch({
-  //     type: "MAKE_ORDER",
-  //     payload: null,
-  //   });
-  // }
+  const [favorites, setFavorites] = useState([]);
+  const addFavoriteCarContext = (car) => {
+    const newFavoriteList = [...favorites, car];
+    setFavorites(newFavoriteList);
+  };
+  const removeFavoriteCarContext = (car) => {
+    const newFavoriteList = favorites.filter(
+      (favorites) => favorites.imdbID !== car.imdbID
+    );
+    setFavorites(newFavoriteList);
+  };
+  console.log(favorites);
 
   return (
     <clientContext.Provider
       value={{
         products: state.products,
         getProducts,
-        // getCart,
-        // checkProductInCart,
-        // productsCountInCart: state.productsCountInCart,
-        // cartData: state.cartData,
-        // changeCountProduct,
-        // makeOrder,
-        // addAndDeleteProductInCart,
         paginationPages: state.paginationPages,
+        addFavoriteCarContext,
+        favorites,
+        removeFavoriteCarContext
       }}
     >
       {children}

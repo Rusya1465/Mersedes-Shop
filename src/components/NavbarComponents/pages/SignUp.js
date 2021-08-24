@@ -1,6 +1,6 @@
 import React, { useContext, useRef, useState } from "react";
 import { Card, Form, Button, Alert } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.css";
 import { useAuth } from "../../contexts/AuthContext";
 import { Link, useHistory } from "react-router-dom";
 
@@ -45,7 +45,13 @@ export default function SignUp() {
               <Form.Label>Password</Form.Label>
               <Form.Control type="password" ref={passwordRef} required />
             </Form.Group>
-            <Button disabled={loading} className="w-100" type="submit">
+            <Button
+              to="/dashboard"
+              disabled={loading}
+              className="w-100"
+              type="submit"
+              variant="primary"
+            >
               Sign Up
             </Button>
           </Form>

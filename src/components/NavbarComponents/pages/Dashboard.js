@@ -18,6 +18,7 @@ export default function Dashboard() {
       setError("Ошибка при попытке выхода");
     }
   }
+  console.log(currentUser);
   return (
     <>
       <Card>

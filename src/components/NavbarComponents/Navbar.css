@@ -6,14 +6,17 @@
   align-items: center;
   font-size: 1.2rem;
 }
+.logo-block {
+  margin-bottom: 40px;
+}
+.modalAdd {
+  background-color: #fff !important;
+}
 
 .navbar-logo {
-  color: #fff;
   justify-self: start;
   margin-left: 20px;
   cursor: pointer;
-  text-decoration: none;
-  font-size: 2rem;
 }
 
 .fa-firstdraft {
@@ -43,9 +46,8 @@
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
-
 .nav-links:hover {
-  background-color: #1888ff;
+  text-decoration: underline;
   border-radius: 4px;
   transition: all 0.2s ease-out;
 }

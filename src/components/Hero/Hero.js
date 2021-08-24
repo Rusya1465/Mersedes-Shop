@@ -163,8 +163,6 @@ const Hero = ({ slides }) => {
   if (!Array.isArray(slides) || slides.length <= 0) {
     return null;
   }
-
-  console.log(slides);
   return (
     <HeroSection>
       <HeroWrapper>

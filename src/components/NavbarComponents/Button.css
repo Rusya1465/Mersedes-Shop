@@ -2,18 +2,18 @@
   --primary: #1888ff;
 }
 
-.btn-material {
-  padding: 8px 20px !important;
-  border-radius: 4px !important;
-  outline: none !important;
-  border: none !important;
-  font-size: 18px !important;
-  color: #fff !important;
-  cursor: pointer !important;
-  background-color: var(--primary) !important;
+.btn {
+  padding: 8px 20px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  background-color: var(--primary);
 }
 
-.btn-material:hover {
+.btn:hover {
   padding: 6px 18px;
   transition: all 0.3s ease-out;
   background-color: transparent;
