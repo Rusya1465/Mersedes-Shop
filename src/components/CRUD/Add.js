@@ -39,6 +39,7 @@ const Add = () => {
     class: "",
     category: "",
     image: "",
+    cardTitle: "",
     configuration: "base",
   });
 
@@ -56,10 +57,11 @@ const Add = () => {
       title: "",
       description: "",
       price: "",
-      brand: "",
+      class: "",
       category: "",
       image: "",
-      countInStock: "",
+      cardTitle: "",
+      configuration: "base",
     });
   }
 
@@ -73,7 +75,7 @@ const Add = () => {
             onChange={handleInput}
             name="title"
             id="standart-basic"
-            label="Название"
+            label="Название Автомобиля"
           />
           <TextField
             value={newProduct.description}
@@ -90,11 +92,11 @@ const Add = () => {
             label="Цена"
           />
           <TextField
-            value={newProduct.author}
+            value={newProduct.class}
             onChange={handleInput}
-            name="brand"
+            name="class"
             id="standart-basic"
-            label="Бренд"
+            label="Класс"
           />
           <TextField
             value={newProduct.category}
@@ -111,11 +113,11 @@ const Add = () => {
             label="Фото"
           />
           <TextField
-            value={newProduct.countInStock}
+            value={newProduct.cardTitle}
             onChange={handleInput}
-            name="countInStock"
+            name="cardTitle"
             id="standart-basic"
-            label="Кол-во в наличии"
+            label="Название для карточки"
           />
         </div>
       </div>

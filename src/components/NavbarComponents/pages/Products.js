@@ -4,8 +4,7 @@ import { Filter } from "@material-ui/icons";
 import React, { useContext, useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 import { clientContext } from "../../contexts/ClientContext";
-import Card from "../Card/Card";
-import Filtration from "../Filtration";
+import ProductCard from "../../ProductCard/ProductCard";
 import { Pagination } from "@material-ui/lab";
 
 const useStyles = makeStyles({
@@ -43,10 +42,12 @@ const Products = () => {
   return (
     <div>
       <h2 className={classes.titleTwo}>Все товары</h2>
-      <Filtration />
+      {/* <Filtration /> */}
       <div className={classes.divs}>
         {products ? (
-          products.map((product) => <Card key={product.id} product={product} />)
+          products.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))
         ) : (
           <h2>Товаров нет в наличии</h2>
         )}

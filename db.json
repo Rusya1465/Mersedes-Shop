@@ -1,3 +1,39 @@
 {
-  "cars": []
+  "cars": [
+    {
+      "title": "Mercedes-AMG A 45 S 4MATIC+",
+      "description": "Модель Edition 1 Mercedes-AMG A 45 S 4MATIC+ выведет Вас на лидерские позиции как в техническом, так и в эстетическом плане. Оба преимущества объединяет в себе аэродинамический пакет AMG с задним антикрылом AMG. Пакет сидений AMG Performance повышает спортивность и комфорт. Контраст к солнечно-желтому цвету автомобиля создают черные легкосплавные колесные диски и пленка цвета «Серые горы magno».",
+      "price": "2 700 000",
+      "class": "A",
+      "category": "Хэтчбек",
+      "image": "https://assets.oneweb.mercedes-benz.com/iris/iris.jpg?COSY-EU-100-1713d0VXqNEFqtyO67PobzIr3eWsrrCsdRRzwQZxkIZbMw3SGtle9tsd2HVcUfprWXGEuJwJ0lV0VOB2qM%25bApRTwI5uG4MQC30srkzNB%25Km7j871hKVi%25F%25vqmUjyLRhnmYaxU5drH1Gm%25n8w0XnoiZKbYM4FvmQTg9LYT6PDZ%25pSeW0yhtsdB%25ycJtTjqNKFYax4JOroYfV8nMruXxoiZClYaOZ02rHAgMpn8obMuoiMDF3M4TL2NTmCI82R0s5jCmUkWg6g9jP4HttU7RKeEPKVfv75Y5949JikhXHOiSGtKpPK&imgt=P27&bkgnd=9&pov=BE040&im=Crop,rect=(360,250,1280,580);Resize,width=400",
+      "configuration": "base",
+      "brand": "A",
+      "cardTitle": "А-Класс хэтчбек",
+      "id": 2
+    },
+    {
+      "title": "Mercedes-AMG A 35 4 MATIC седан",
+      "description": "Седан с полным паспортным именем Mercedes-AMG A 35 4Matic оснащен абсолютно теми же агрегатами. Это форсированный двухлитровый турбомотор М 260 с отдачей 306 л.с. и 400 Нм, семиступенчатый «робот» AMG Speedshift DCT 7G с двумя сцеплениями и полный привод с электромеханической многодисковой муфтой подключения задних колес. Кузов усилен диагональными растяжками под капотом и алюминиевой панелью под двигателем.",
+      "price": "2 590 000",
+      "class": "A",
+      "category": "Седан",
+      "image": "https://assets.oneweb.mercedes-benz.com/iris/iris.jpg?COSY-EU-100-1713d0VXqNEFqtyO67PobzIr3eWsrrCsdRRzwQZxkIZbMw3SGtle9tsd2HVcUfpOyXGEundJ0l3OZOB2qBqbApRTyI5ux6ZQC30M1kzNBP6m7jAGohKV5YL%25vqCJjyLRgcDYaxPa9rH1endn8wYAxoiZr6YM4FAK2Tg95Yn6PDCIDSeWHmMtsd8Y%25cUfiMcXGE4TwJ0lgCZOB2fMqbAp7ToI5uKMTQmIJwF1iE6PDGmhSc63ZstXSRkGcUfaj6Phf7VSeTxdqtsLBJRcUXyJxXGJpl1J0OPqwOoHYUqDKCaZHoznIBbB2ZA0sQQziD45jA4FNgiaSa202hGnMms%25GI7Q4RA4&imgt=P27&bkgnd=9&pov=BE040&im=Crop,rect=(360,250,1280,580);Resize,width=250",
+      "cardTitle": "A-Класс седан",
+      "configuration": "base",
+      "titleCard": "A",
+      "id": 3
+    },
+    {
+      "title": "C 200 4MATIC Седан",
+      "description": "Новый C-Класс седан умело сочетает в себе кажущиеся противоположности, такие как спортивность и комфорт – с экономичностью, эмоциональностью и интеллектуальностью, определяя таким образом современную роскошь.",
+      "price": "3 660 000",
+      "class": "C",
+      "category": "Седан",
+      "image": "https://assets.oneweb.mercedes-benz.com/iris/iris.jpg?COSY-EU-100-1713d0VXqNWFqtyO67PobzIr3eWsrrCsdRRzwQZQ9vZbMw3SGtlajtsd2JQcUfpOyXGEundJ0l36xOB2NbFbApRn3I5ux5xQC31grkzNwtnm7jA2jhKViSF%25vq4tTyLRgLFYaxPrWrH1enun8wYzyoiZBkNM4FAm2Tg95Yn6PDakoSeWHw9tsd8otcUfiXkXGE4JSJ0lgOrOB2Pz%25bApe7pI5usKDQC3vT6khQOZ9w4lSeW0h%25tXSNFUcJtxmcXGEi9EJ0l8o1OB2G8nbAp0PyI5u9EaQC3zgOkzN7P9m7jKevhKVvst%25vqLBqyL0fsjko9wdYfHVyJ1qRcYxqN88Zlo21Ix2rbpldCdcqcgVGB4NPVHF82mx2&imgt=P27&bkgnd=9&pov=BE040&im=Crop,rect=(360,250,1280,580);Resize,width=250",
+      "cardTitle": "С-Класс седан",
+      "configuration": "base",
+      "id": 4
+    }
+  ]
 }
