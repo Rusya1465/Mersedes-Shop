@@ -1,10 +1,12 @@
 import React from "react";
-import "../../App.css";
+import "../../../App.css";
+import { SliderData } from "../../data/SliderData";
+import Hero from "../../Hero/Hero";
 
 export default function Home() {
   return (
     <>
-      <h1 className="home">EPIC</h1>
+      <Hero slides={SliderData} />
     </>
   );
 }
