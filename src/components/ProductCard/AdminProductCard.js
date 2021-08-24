@@ -13,6 +13,7 @@ import { ShoppingCart } from "@material-ui/icons";
 import { useAuth } from "../contexts/AuthContext";
 import { adminContext } from "../contexts/AdminContext";
 import ModalEdit from "../CRUD/ModalEdit";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
   root: {
@@ -24,7 +25,11 @@ const useStyles = makeStyles({
   },
 });
 
-export default function ImgMediaCard({ product }) {
+export default function ImgMediaCard({
+  product,
+  FavoriteComponent,
+  handleFavoritesClick,
+}) {
   const { deleteProduct, getProductToEdit, productToEdit } =
     useContext(adminContext);
   const classes = useStyles();
@@ -38,29 +43,37 @@ export default function ImgMediaCard({ product }) {
   return (
     <>
       <Card className={classes.root}>
-        <CardActionArea>
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-              {product.cardTitle}
-            </Typography>
-            <Typography size="small" color="textSecondary">
-              от {product.price} Сом
-            </Typography>
-          </CardContent>
-          <CardMedia
-            className={classes.cartImage}
-            component="img"
-            alt="Contemplative Reptile"
-            image={product.image}
-            title="Contemplative Reptile"
-          />
-        </CardActionArea>
+        <Link to={`/product-detail/${product.id}`}>
+          <CardActionArea>
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="h2">
+                {product.cardTitle}
+              </Typography>
+              <Typography size="small" color="textSecondary">
+                от {product.price} Сом
+              </Typography>
+            </CardContent>
+            <CardMedia
+              className={classes.cartImage}
+              component="img"
+              alt="Contemplative Reptile"
+              image={product.image}
+              title="Contemplative Reptile"
+            />
+          </CardActionArea>
+        </Link>
         <CardActions className="shoping_box">
           {changeId === product.id ? (
             <ModalEdit setChangeId={setChangeId} />
           ) : null}
           <button onClick={() => handleEditChange(product.id)}>Изменить</button>
           <button onClick={() => deleteProduct(product.id)}>Удалить</button>
+          <CardActions
+            style={{ cursor: "pointer" }}
+            onClick={() => handleFavoritesClick(product)}
+          >
+            <FavoriteComponent />
+          </CardActions>
         </CardActions>
       </Card>
     </>

@@ -1,18 +1,6 @@
 {
   "cars": [
     {
-      "title": "Mercedes-AMG A 35 4 MATIC седан",
-      "description": "Седан с полным паспортным именем Mercedes-AMG A 35 4Matic оснащен абсолютно теми же агрегатами. Это форсированный двухлитровый турбомотор М 260 с отдачей 306 л.с. и 400 Нм, семиступенчатый «робот» AMG Speedshift DCT 7G с двумя сцеплениями и полный привод с электромеханической многодисковой муфтой подключения задних колес. Кузов усилен диагональными растяжками под капотом и алюминиевой панелью под двигателем.",
-      "price": "2 590 000",
-      "class": "A",
-      "category": "Седан",
-      "image": "https://assets.oneweb.mercedes-benz.com/iris/iris.jpg?COSY-EU-100-1713d0VXqNEFqtyO67PobzIr3eWsrrCsdRRzwQZxkIZbMw3SGtle9tsd2HVcUfpOyXGEundJ0l3OZOB2qBqbApRTyI5ux6ZQC30M1kzNBP6m7jAGohKV5YL%25vqCJjyLRgcDYaxPa9rH1endn8wYAxoiZr6YM4FAK2Tg95Yn6PDCIDSeWHmMtsd8Y%25cUfiMcXGE4TwJ0lgCZOB2fMqbAp7ToI5uKMTQmIJwF1iE6PDGmhSc63ZstXSRkGcUfaj6Phf7VSeTxdqtsLBJRcUXyJxXGJpl1J0OPqwOoHYUqDKCaZHoznIBbB2ZA0sQQziD45jA4FNgiaSa202hGnMms%25GI7Q4RA4&imgt=P27&bkgnd=9&pov=BE040&im=Crop,rect=(360,250,1280,580);Resize,width=250",
-      "cardTitle": "A-Класс седан",
-      "configuration": "base",
-      "titleCard": "A",
-      "id": 3
-    },
-    {
       "title": "C 200 4MATIC Седан",
       "description": "Новый C-Класс седан умело сочетает в себе кажущиеся противоположности, такие как спортивность и комфорт – с экономичностью, эмоциональностью и интеллектуальностью, определяя таким образом современную роскошь.",
       "price": "3 660 000",
@@ -78,6 +66,33 @@
       "cardTitle": "CLA купе",
       "configuration": "base",
       "id": 9
+    },
+    {
+      "title": "CLA 200 Sport",
+      "description": "Mercedes-Benz CLA-класс (ориг. нем. CLA-Klasse) — серия компактных престижных легковых автомобилей[1] немецкой торговой марки Mercedes-Benz, созданная на платформе компактных моделей A- и B-классов. Премьера состоялась в январе 2013 года на Североамериканском международном автосалоне в Детройте.",
+      "price": "3 210 000",
+      "class": "CLA",
+      "category": "Купе",
+      "image": "https://assets.oneweb.mercedes-benz.com/iris/iris.jpg?COSY-EU-100-1713d0VXqNEFqtyO67PobzIr3eWsrrCsdRRzwQZxkIZbMw3SGtle9tsd2HVcUfpOyXGEundJ0l3OZOB2qM%25bApRTwI5uGoxQC30g7kzNBUnm7jAyvhKV5XN%25vq4t9yLRgLFYaxPrWrH1yBRn8wYTyoiZB7lM4FAyrTg95bT6PDakoSeWHyhtsd8otcUfiM1XGE45wJ0ldoVOB2zMnbAp7oMIkbX1Zx8fTg9Ukm6tTuweSc6qQMtsdLYqcUfeOyXGE1uAJ0lBHAOB2AMnbAp5dXI5gZ8lXhRjwQZgOGUuauoQ3pE77V9hDNt3DkSW9wUwopoL24PvEa2zq7DJ3D&imgt=P27&bkgnd=9&pov=BE040&im=Crop,rect=(360,250,1280,580);Resize,width=300",
+      "cardTitle": "CLA купе",
+      "configuration": "base",
+      "id": 9
+    },
+    {
+      "title": "CLA 200 Sport",
+      "description": "Mercedes-Benz CLA-класс (ориг. нем. CLA-Klasse) — серия компактных престижных легковых автомобилей[1] немецкой торговой марки Mercedes-Benz, созданная на платформе компактных моделей A- и B-классов. Премьера состоялась в январе 2013 года на Североамериканском международном автосалоне в Детройте.",
+      "price": "3 210 000",
+      "class": "CLA",
+      "category": "Купе",
+      "image": "https://assets.oneweb.mercedes-benz.com/iris/iris.jpg?COSY-EU-100-1713d0VXqNEFqtyO67PobzIr3eWsrrCsdRRzwQZxkIZbMw3SGtle9tsd2HVcUfpOyXGEundJ0l3OZOB2qM%25bApRTwI5uGoxQC30g7kzNBUnm7jAyvhKV5XN%25vq4t9yLRgLFYaxPrWrH1yBRn8wYTyoiZB7lM4FAyrTg95bT6PDakoSeWHyhtsd8otcUfiM1XGE45wJ0ldoVOB2zMnbAp7oMIkbX1Zx8fTg9Ukm6tTuweSc6qQMtsdLYqcUfeOyXGE1uAJ0lBHAOB2AMnbAp5dXI5gZ8lXhRjwQZgOGUuauoQ3pE77V9hDNt3DkSW9wUwopoL24PvEa2zq7DJ3D&imgt=P27&bkgnd=9&pov=BE040&im=Crop,rect=(360,250,1280,580);Resize,width=300",
+      "cardTitle": "CLA купе",
+      "configuration": "base",
+      "id": 9
+    }
+  ],
+  "comments": [
+    {
+      "hello": "hello"
     }
   ]
 }

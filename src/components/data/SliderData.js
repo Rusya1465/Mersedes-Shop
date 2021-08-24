@@ -6,28 +6,28 @@ import ImageFour from "../Hero/images/image-4.jpg";
 export const SliderData = [
   {
     title: "Воплоти свою мечту в реальность",
-    path: "/catalog",
+    path: "/products",
     label: "Заказать",
     image: ImageOne,
     alt: "Car",
   },
   {
     title: "Воплоти свою мечту в реальность",
-    path: "/catalog",
+    path: "/products",
     label: "Заказать",
     image: ImageSecond,
     alt: "Car",
   },
   {
     title: "Воплоти свою мечту в реальность",
-    path: "/catalog",
+    path: "/products",
     label: "Заказать",
     image: ImageThird,
     alt: "Car",
   },
   {
     title: "Воплоти свою мечту в реальность",
-    path: "/catalog",
+    path: "/products",
     label: "Заказать",
     image: ImageFour,
     alt: "Car",

@@ -153,7 +153,12 @@ const Products = () => {
         {checkAdmin ? (
           products ? (
             products.map((product) => (
-              <AdminProductCard key={product.id} product={product} />
+              <AdminProductCard
+                handleFavoritesClick={addFavoriteCar}
+                FavoriteComponent={AddFavorite}
+                key={product.id}
+                product={product}
+              />
             ))
           ) : (
             <h2>Товаров нет в наличии</h2>
