@@ -17,6 +17,7 @@
   justify-self: start;
   margin-left: 20px;
   cursor: pointer;
+  display: block;
 }
 
 .fa-firstdraft {
@@ -50,6 +51,9 @@
   text-decoration: underline;
   border-radius: 4px;
   transition: all 0.2s ease-out;
+}
+.favourite_link {
+  color: black !important;
 }
 
 .fa-bars {
@@ -86,7 +90,7 @@
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
-    z-index: 1;
+    z-index: 11;
   }
 
   .nav-links {
@@ -105,7 +109,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(25%, 50%);
   }
 
   .menu-icon {
@@ -144,5 +147,22 @@
 
   button {
     display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo2_responce {
+    display: none;
+  }
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .nav-item {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    align-self: center;
   }
 }

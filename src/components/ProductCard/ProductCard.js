@@ -5,13 +5,9 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
-import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import { IconButton } from "@material-ui/core";
 import { clientContext } from "../contexts/ClientContext";
-import { ShoppingCart } from "@material-ui/icons";
-import { useAuth } from "../contexts/AuthContext";
-import { adminContext } from "../contexts/AdminContext";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
   root: {
@@ -34,25 +30,28 @@ export default function ImgMediaCard({
   return (
     <>
       <Card className={classes.root}>
-        <CardActionArea>
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-              {product.cardTitle}
-            </Typography>
-            <Typography size="small" color="textSecondary">
-              от {product.price} Сом
-            </Typography>
-          </CardContent>
-          <CardMedia
-            className={classes.cartImage}
-            component="img"
-            alt="Contemplative Reptile"
-            image={product.image}
-            title="Contemplative Reptile"
-          />
-        </CardActionArea>
+        <Link to={`/product-detail/${product.id}`}>
+          <CardActionArea>
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="h2">
+                {product.cardTitle}
+              </Typography>
+              <Typography size="small" color="textSecondary">
+                от {product.price} Сом
+              </Typography>
+            </CardContent>
+            <CardMedia
+              className={classes.cartImage}
+              component="img"
+              alt="Contemplative Reptile"
+              image={product.image}
+              title="Contemplative Reptile"
+            />
+          </CardActionArea>
+        </Link>
         <CardActions
           className="shoping_box"
+          style={{ cursor: "pointer" }}
           onClick={() => handleFavoritesClick(product)}
         >
           <FavoriteComponent />

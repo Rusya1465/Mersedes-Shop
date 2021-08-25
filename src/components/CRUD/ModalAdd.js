@@ -46,6 +46,7 @@ export default function ModalAdd() {
     image: "",
     cardTitle: "",
     configuration: "base",
+    comments: [],
   });
 
   function handleInput(e) {
@@ -67,6 +68,7 @@ export default function ModalAdd() {
       image: "",
       cardTitle: "",
       configuration: "base",
+      comments: [],
     });
     setShow(false);
   }

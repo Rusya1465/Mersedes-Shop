@@ -60,7 +60,7 @@ function Navbar() {
           <div className="logo-block">
             {" "}
             <img src={logo} />
-            <img src={logo2} />
+            <img src={logo2} className="logo2_responce" />
           </div>
         </Link>
         <div className="menu-icon" onClick={handleClick}>
@@ -79,14 +79,19 @@ function Navbar() {
           >
             <Nav>
               <NavDropdown className="dropdown_button" title="Меню">
-                <NavDropdown.Item href="#action/3.1">
-                  <Link to="/favourite">Избранные товары</Link>
+                <NavDropdown.Item>
+                  <Link className="favourite_link" to="/favourite">
+                    Избранные товары
+                  </Link>
                 </NavDropdown.Item>
 
-                <NavDropdown.Divider />
-                <NavDropdown.Item>
-                  {checkAdmin ? <ModalAdd className="modalAdd" /> : null}
-                </NavDropdown.Item>
+                {checkAdmin ? (
+                  <>
+                    <NavDropdown.Item>
+                      <ModalAdd className="modalAdd" />
+                    </NavDropdown.Item>
+                  </>
+                ) : null}
               </NavDropdown>
             </Nav>
           </li>
